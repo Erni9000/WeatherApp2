@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weatheritemadvanced"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/weatherdescriptionadvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Weather"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".ui.local.advancedInfo.AdvancedInfoFragment">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/displaylocaltemperatureadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Tempreture"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+            <!-- neu -->      <TextView
+            android:id="@+id/temp_feels_likeadvanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="Feels like"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/temp_maxadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="max temp"
+                android:textSize="15sp" />
+            <!-- neu -->
+            <TextView
+                android:id="@+id/temp_minadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="min temp"
+                android:textSize="15sp" />
+            <!-- neu -->
+            <TextView
+                android:id="@+id/pressureadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="pressure"
+                android:textSize="15sp" />
+            <!-- neu -->
+            <TextView
+                android:id="@+id/humidityadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="humidity"
+                android:textSize="15sp" />
+            <!-- neu -->
+            <TextView
+                android:id="@+id/visibilityadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="visibility"
+                android:textSize="15sp" />
+            <!-- neu -->
+            <!-- neu -->
+            <TextView
+                android:id="@+id/rainorsnowperonehouradvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="rain/snow"
+                android:textSize="15sp" />
+            <!-- neu -->
+            <TextView
+                android:id="@+id/sunriseadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="sunrise"
+                android:textSize="15sp" />
+            <!-- neu --><TextView
+            android:id="@+id/sunsetadvanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:text="sunset"
+            android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/windspeedadvanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="windspeed"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/compassadvanced"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/locationadvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="Location"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/weathericonadvanced"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher_background" />
+
+
+    </LinearLayout>
+</LinearLayout>

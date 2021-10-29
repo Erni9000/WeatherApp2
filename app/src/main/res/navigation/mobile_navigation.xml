@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_local">
+
+    <fragment
+        android:id="@+id/navigation_local"
+        android:name="com.example.weatherapp2.ui.local.LocalFragment"
+        android:label="Wetter"
+        tools:layout="@layout/fragment_local">
+        <action
+            android:id="@+id/action_navigation_local_to_home_fragment_advanced"
+            app:destination="@id/home_fragment_advanced" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.weatherapp2.ui.search.SearchFragment"
+        android:label="Suche"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_navigation_dashboard_to_home_fragment_advanced"
+            app:destination="@id/home_fragment_advanced" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_fragment_advanced"
+        android:name="com.example.weatherapp2.ui.local.advancedInfo.AdvancedInfoFragment"
+        android:label="Mehr Informationen"
+        tools:layout="@layout/fragment_info_advanced">
+        <argument
+            android:name="weatherInfo"
+            app:argType="com.example.weatherapp2.ui.local.WeatherByApi" />
+    </fragment>
+
+
+</navigation>
